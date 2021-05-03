@@ -1,0 +1,23 @@
+
+:root{
+    --bg-color:rgb(47, 47, 241)
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Freckle Face', cursive;
+}
+
+nav{
+    flex-direction: column;
+    
+}
+.nav-left{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font2);
+}
+nav .nav-left{
+
+    flex-direction: column;
+}

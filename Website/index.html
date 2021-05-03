@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="/static/CSS/Responsive.css" media="screen and (max-width: 800px)""> -->
+    <link rel=" preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
+    <style>
+        @media only screen and (max-width: 800px) {
+            :root {
+                --bg-color: rgb(47, 47, 241)
+            }
+
+            * {
+                padding: 0;
+                margin: 0;
+                font-family: var(--font2)
+            }
+
+            nav {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .nav-left {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                font-family: var(--font2);
+            }
+
+            .right-nav {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .left-nav {
+
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+
+            #imgSpecial {
+                display: none;
+            }
+
+            .section-part-1 {
+                /* width: 70vw; */
+                display: none;
+            }
+
+            .section-part-2 {
+                /* width: 100%; */
+                display: none;
+            }
+
+            .section-part-3 {
+                /* width: 70vw; */
+                display: none;
+            }
+
+            .mobile {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .mobile-section {
+                display: block;
+                background-color: rgba(207, 207, 207, 0.87);
+                border-radius: 10px;
+                margin: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left-nav">
+                <a href="#home">Home</a>
+                <a href="#">About</a>
+                <a href="">Content</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+            <div class="right-nav">
+                <form action="">
+                    <input type="search" name="" id="" class="search-bar search" placeholder="Search Here">
+                    <input type="submit" value="Submit" class="search-bar search-button">
+                </form>
+            </div>
+        </nav>
+        <div id="carouselExampleCaptions" class="carousel slide my-1" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://source.unsplash.com/1600x900/?nature,water" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <button class="btn btn-1 btn-success">Check Special Offer now</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://source.unsplash.com/1600x900/?nature,water" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <button class="btn btn-1 btn-primary">Check Special Offer now</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://source.unsplash.com/1600x900/?nature,water" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <button class="btn btn-1 btn-dark">Check Special Offer now</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+
+    </header>
+    <main>
+        <div class="container main-1" id="home">
+            <div class="left">
+                <p>
+                <h1 style="text-align: center; display: inline;">Spcial Offer</h1>
+                <h4>Only 5 tickets Avilable Hurry</h4>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, vel et quam cum ratione similique
+                debitis unde quibusdam iure quas a eum natus dolorum, expedita aspernatur commodi veritatis omnis. Sequi
+                laboriosam exercitationem officiis. Obcaecati expedita eum odio sint quidem eius ab itaque tenetur quasi
+                sequi dolor quas perspiciatis ea ipsam corporis corrupti illo inventore pariatur, quisquam molestias
+                dolores fugit officiis a architecto! Adipisci modi, veritatis consequuntur sint deserunt ullam
+                exercitationem omnis aliquam perspiciatis ut sequi libero obcaecati porro? Facere sed possimus
+                reprehenderit amet dicta consequatur quos officia minima nobis, doloremque, aspernatur iste ipsa fugit
+                dolores! Ad aspernatur necessitatibus officia recusandae.
+                </p>
+            </div>
+            <div class="container right">
+
+                <div class="img"></div>
+                <img src="./2.jpg" alt="" id="imgSpecial">
+            </div>
+        </div>
+        <div class="container">
+            <hr class="mx-width">
+            <section class="section-1 container ">
+                <div class="section-part-1">
+                    <img src="./3.jpg" alt="" class="img-section" id="">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos recusandae
+                    placeat corporis perferendis sed excepturi consectetur odit dolorum sapiente, beatae sint quaerat
+                    rem
+                    culpa, quasi, deleniti doloremque! Nobis quo dignissimos quia dolores harum sed autem sit dicta non
+                    amet
+                    reprehenderit accusantium ex, cumque quae?
+                </div>
+                <div class="section-part-2">
+                    <img src="./3.jpg" alt="" class="img-section">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos recusandae
+                    placeat corporis perferendis sed excepturi consectetur odit dolorum sapiente, beatae sint quaerat
+                    rem
+                    culpa, quasi, deleniti doloremque! Nobis quo dignissimos quia dolores harum sed autem sit dicta non
+                    amet
+                    reprehenderit accusantium ex, cumque quae?
+                </div>
+                <div class="section-part-3"><img src="./3.jpg" alt="" class="img-section">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos recusandae
+                    placeat corporis perferendis sed excepturi consectetur odit dolorum sapiente, beatae sint quaerat
+                    rem
+                    culpa, quasi, deleniti doloremque! Nobis quo dignissimos quia dolores harum sed autem sit dicta non
+                    amet
+                    reprehenderit accusantium ex, cumque quae?</div>
+        </div>
+        </section>
+
+        <section class=" container mobile">
+            <div class="mobile-section section-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, blanditiis quas excepturi cum at, ut
+                vitae quod ducimus quae labore eveniet vero aliquam enim maiores? Architecto dicta sapiente at quibusdam
+                illo vitae reprehenderit, fugiat praesentium quam qui, dolorum inventore ut voluptatem. Sapiente, quidem
+                nulla!
+            </div>
+            <div class="mobile-section section-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, blanditiis quas excepturi cum at, ut
+                vitae quod ducimus quae labore eveniet vero aliquam enim maiores? Architecto dicta sapiente at quibusdam
+                illo vitae reprehenderit, fugiat praesentium quam qui, dolorum inventore ut voluptatem. Sapiente, quidem
+                nulla!
+            </div>
+            <div class="mobile-section section-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, blanditiis quas excepturi cum at, ut
+                vitae quod ducimus quae labore eveniet vero aliquam enim maiores? Architecto dicta sapiente at quibusdam
+                illo vitae reprehenderit, fugiat praesentium quam qui, dolorum inventore ut voluptatem. Sapiente, quidem
+                nulla!
+            </div>
+        </section>
+
+        <section class="container" id="contact">
+            <form action="" class="">
+                <div class="contact-1 container">
+                    <div class="container contact-2">
+                        <h1>Contact Us</h1>
+                    </div>
+                    <input type="text" name="" id="" class="input" placeholder="Please give your name ">
+                    <input type="text" name="" id="" class="input" placeholder="Please give your email">
+                    <input type="text" name="" id="" class="input" placeholder="Please give your phone number">
+                    <textarea type="text" name="" id="" class="input"
+                        placeholder="Please give the description of your problem"></textarea>
+                    <input type="submit" value="Submit" class="input">
+                </div>
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p class="text-center mt-5 py-2">&copy;All rights are reserved</p>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+    crossorigin="anonymous"></script>
+
+</html>
